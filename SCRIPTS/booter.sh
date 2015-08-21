@@ -94,4 +94,6 @@ FFF
 	beacon_blink 54 20 0.1
 	exit
     fi
+    sleep 1
+    reboot
 fi
