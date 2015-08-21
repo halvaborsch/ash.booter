@@ -87,9 +87,8 @@ FFF
     beacon_blink 54 $cnt 0.2
 
     if [ ! -z "$(eval echo \$ash$cnt)" ]; then
-	cat $SCRIPTS$DEFAULT > /tmp/autoexec.ash
-	eval cat "\$SCRIPTS\$cnt\_\$ash$cnt" >> /tmp/autoexec.ash
-	mv /tmp/autoexec.ash $AUTOEXEC
+	cat $SCRIPTS$DEFAULT > $AUTOEXEC
+	eval cat "\$SCRIPTS\$cnt\_\$ash$cnt" >> $AUTOEXEC
     else
 	beacon_blink 54 20 0.1
 	exit
