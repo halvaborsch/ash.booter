@@ -82,7 +82,7 @@ FFF
     done
     sleep 2
 
-    if [ $cnt -eq 0 ];then cat $SCRIPTS$DEFAULT > $AUTOEXEC; exit; fi
+    if [ $cnt -eq 0 ];then cat $SCRIPTS$DEFAULT > $AUTOEXEC; sleep 1; reboot; fi
 
     beacon_blink 54 $cnt 0.2
 
