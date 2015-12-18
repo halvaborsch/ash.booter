@@ -89,6 +89,7 @@ FFF
     if [ ! -z "$(eval echo \$ash$cnt)" ]; then
 	sed 's/\\r$//' $SCRIPTS$DEFAULT > $AUTOEXEC
 	eval sed 's/\\r$//' "\$SCRIPTS\$cnt\_\$ash$cnt" >> $AUTOEXEC
+	echo >> $AUTOEXEC
     else
 	beacon_blink 54 20 0.1
 	exit
