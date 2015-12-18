@@ -1,6 +1,6 @@
 ###########################################
 # XIAOMI YI AUTOEXEC.ASH GENERATOR
-# ASH.BOOTER v0.2 (2015-10-08)
+# ASH.BOOTER v0.3 (2015-12-18)
 #
 # by Halvaborsch <dsequence@gmail.com>
 # https://github.com/halvaborsch/ash.booter

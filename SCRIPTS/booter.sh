@@ -2,7 +2,7 @@
 ###########################################
 #
 # XIAOMI YI AUTOEXEC.ASH GENERATOR
-# ASH.BOOTER v0.1 (2015-08-21)
+# ASH.BOOTER v0.3 (2015-12-18)
 #
 # by Halvaborsch <dsequence@gmail.com>
 # https://github.com/halvaborsch/ash.booter
@@ -82,13 +82,13 @@ FFF
     done
     sleep 2
 
-    if [ $cnt -eq 0 ];then cat $SCRIPTS$DEFAULT > $AUTOEXEC; sleep 1; reboot; fi
+    if [ $cnt -eq 0 ];then sed 's/\\r$//' $SCRIPTS$DEFAULT > $AUTOEXEC; sleep 1; reboot; fi
 
     beacon_blink 54 $cnt 0.2
 
     if [ ! -z "$(eval echo \$ash$cnt)" ]; then
-	cat $SCRIPTS$DEFAULT > $AUTOEXEC
-	eval cat "\$SCRIPTS\$cnt\_\$ash$cnt" >> $AUTOEXEC
+	sed 's/\\r$//' $SCRIPTS$DEFAULT > $AUTOEXEC
+	eval sed 's/\\r$//' "\$SCRIPTS\$cnt\_\$ash$cnt" >> $AUTOEXEC
     else
 	beacon_blink 54 20 0.1
 	exit

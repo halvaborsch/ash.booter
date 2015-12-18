@@ -1,7 +1,6 @@
 ###########################################
 # AUTOMATED GENERATEDF BY TASTY BOOTER!
 # DO NOT EDIT 0_default.ash FILE
-# BOOTER v0.2
 # by Halvaborsch <dsequence@gmail.com>
 # https://github.com/halvaborsch/ash.booter
 ###########################################
